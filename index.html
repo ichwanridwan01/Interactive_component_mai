@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-main">
+        <section>
+          <header>
+            <h1>Simple, traffic-based pricing</h1>
+            <h3>Sign-up for our 30-day trial. No credit card required.</h3>
+          </header>
+          <div class="card">
+            <div class="page-pricing">
+              <h4>2000k</h4>
+              <h1>$16.00</h1>
+              <span class="text-medium duration">/month</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar">
+                <input type="range" min="1" max="5" class="myRange" />
+              </div>
+            </div>
+            <div class="mounth">
+              <h5>Monthly Billing</h5>
+              <input type="checkbox" class="checkbox" id="checkbox" />
+              <label for="checkbox" class="label">
+                <div class="ball"></div>
+              </label>
+              <h6>Yearly Billing<span class="text-orange"> 25%</span></h6>
+            </div>
+            <div class="information">
+              <div class="feature">
+                <p>
+                  <img src="/images/icon-check.svg" alt="" /> Unlimited websites
+                </p>
+                <p>
+                  <img src="/images/icon-check.svg" alt="" /> 100% data
+                  ownership
+                </p>
+                <p><img src="/images/icon-check.svg" alt="" /> Email reports</p>
+              </div>
+              <form action="">
+                <button type="submit">Start my trial</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
